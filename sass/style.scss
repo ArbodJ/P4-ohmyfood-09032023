@@ -99,8 +99,10 @@ nav{
   font-size: $fs16;
   line-height: 19px;
   color: $white-color;
+  transition: all 0.4s ease-out;
   &#btnExplain:hover{
     opacity: 0.7;
+    background: linear-gradient(180deg, #9356DC -5.2%, #FF79DA 110.74%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.644);
   }
 }
@@ -141,6 +143,7 @@ nav{
   background: #F7F7F7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
+  transition: all 0.4s ease-out;
 }
 .fIcon{
   color: #7E7E7E;
@@ -240,18 +243,83 @@ nav{
   font-size: 17px;
 }
 .like{
-  width: 7.26%;
-  height: 21px;
+  display: flex;
+  height: 1em;
+  cursor: pointer;
   position: relative;
-  top: 23px;
-  right: 24.63px;
+  top: 19px;
+  right: 0;
+  bottom: 0;
+  left: -20px;
 }
-.fa-heart{
-  width: 100%;
-  height: 100%;
+.fa-2x
+{
   font-weight: 100;
-  font-size: 21px;
 }
+.fa-regular .fa-heart
+{
+  /* font-size: 42px; */
+  color: black;
+  
+  font-weight: 100;
+}
+.ft
+{
+  font-weight: 100;
+  background: #000;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: absolute;
+}
+.ft:hover
+{
+  background: radial-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 900;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-animation: animationHeart 0.9s ease-in-out;
+  animation: animationHeart 0.9s ease-in-out;
+}
+@keyframes animationHeart 
+{
+  0%
+  {
+    /* transform: scale(0); */
+    background-size: 0% 0%;
+  }
+  100%
+  {
+    /* transform: scale(1); */
+    background-size: 100% 100%;
+  }
+}
+@-webkit-keyframes animationHeart 
+{
+  0%
+  {
+    /* transform: scale(0); */
+    background-size: 0% 0%;
+  }
+  100%
+  {
+    /* transform: scale(1); */
+    background-size: 100% 100%;
+  }
+}
+// .fa-2x{
+//   font-weight: 100;
+// }
+// .fa-heart{
+//   width: 100%;
+//   height: 100%;
+//   font-weight: 100;
+//   font-size: 21px;
+//   line-height:21px;
+//   color: #000; 
+// }
 /*footer*/
 footer{
   background: $greyDark-color;
