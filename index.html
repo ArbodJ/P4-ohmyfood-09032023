@@ -8,10 +8,149 @@
   <link rel="stylesheet" href="sass/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/04bc3baa55.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  
+  <div id="page">
+    <header>
+      <!-- title & search -->
+      <div id="logoTitle">
+        <h1>ohmyfood</h1>
+      </div>
+      <div id="research">
+        <form action="" method="post" id="form">
+          <label for="city">
+            <a href="#" id="cityLink">
+              <i class="fa-solid fa-location-dot"></i>
+            </a>
+          </label>
+          <input type="text" name="city" id="town" value="Paris, Belleville">
+        </form>
+      </div>
+    </header>
+    <!-- navigation -->
+    <nav>
+      <h2 id="navTitle" class="title">Réservez le menu qui vous convient</h2>
+      <p id="explain">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+      <button id="btnExplain">Explorez nos restaurants</button>
+    </nav>
+    <!-- functionaly -->
+    <section id="functionaly">
+      <h2 id="functionTitle" class="title">Fonctionnement</h2>
+      <div class="fBlock">
+        <p class="fNombre">1</p>
+        <a href="#" class="fBlockText">
+          <p class="fIcon"><i class="fa-solid fa-mobile-screen-button"></i></p>
+          <p class="fText">Choisissez un restaurant</p>
+        </a>
+      </div>
+      <div class="fBlock">
+        <p class="fNombre">2</p>
+        <a href="#" class="fBlockText">
+          <p class="fIcon"><i class="fa-solid fa-list"></i></p>
+          <p class="fText">Composez votre menu</p>
+        </a>
+      </div>
+      <div class="fBlock">
+        <p class="fNombre">3</p>
+        <a href="#" class="fBlockText">
+          <p class="fIcon"><i class="fa-solid fa-store"></i></p>
+          <p class="fText">Dégustez au restaurant</p>
+        </a>
+      </div>
+    </section>
+    <!-- restaurant -->
+    <section id="restaurant">
+      <h2 id="restaurantTitle" class="title">Restaurants</h2>
+      <!-- display restaurants -->
+      <article id="display">
+        <figure class="blockDisplay">
+          <a href="#" class="linkDisplay">
+            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du goût" class="pictureDisplay">
+            <span class="new">Nouveau</span>
+          </a>
+          <figcaption class="textDisplay">
+            <a href="#" class="linkText">
+              <div class="location">
+                <h3 class="titleLocation">La palette du goût</h3>
+                <p class="locationText">Ménilmontant</p>
+              </div>
+            </a>
+            <div class="like">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </figcaption>
+        </figure>
+      </article>
+      <article id="display">
+        <figure class="blockDisplay">
+          <a href="#" class="linkDisplay">
+            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="la note enchantée" class="pictureDisplay">
+            <span class="new">Nouveau</span>
+          </a>
+          <figcaption class="textDisplay">
+            <a href="#" class="linkText">
+              <div class="location">
+                <h3 class="titleLocation">La note enchantée</h3>
+                <p class="locationText">Charonne</p>
+              </div>
+            </a>
+            <div class="like">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </figcaption>
+        </figure>
+      </article>
+      <article id="display">
+        <figure class="blockDisplay">
+          <a href="#" class="linkDisplay">
+            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="à la française" class="pictureDisplay">
+          </a>
+          <figcaption class="textDisplay">
+            <a href="#" class="linkText">
+              <div class="location">
+                <h3 class="titleLocation">À la française</h3>
+                <p class="locationText">Cité Rouge</p>
+              </div>
+            </a>
+            <div class="like">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </figcaption>
+        </figure>
+      </article>
+      <article id="display">
+        <figure class="blockDisplay">
+          <a href="#" class="linkDisplay">
+            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="le délices des sens" class="pictureDisplay">
+          </a>
+          <figcaption class="textDisplay">
+            <a href="#" class="linkText">
+              <div class="location">
+                <h3 class="titleLocation">Le délice des sens</h3>
+                <p class="locationText">Folie-Méricourt</p>
+              </div>
+            </a>
+            <div class="like">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </figcaption>
+        </figure>
+      </article>
+    </section>
+    <!-- footer -->
+    <footer>
+      <section id="footPage">
+        <h3 id="footTitle">ohmyfood</h3>
+        <ul id="footList">
+          <li id="l1"><a href="#" class="footLink"><i class="fa-solid fa-utensils"></i>Proposer un Restaurant</a></li>
+          <li id="l2"><a href="#" class="footLink"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+          <li id="l3"><a href="#" class="footLink">Mentions légales</a></li>
+          <li id="l4"><a href="#" class="footLink">contact</a></li>
+        </ul>
+      </section>
+    </footer>
+  </div>
 </body>
 </html>

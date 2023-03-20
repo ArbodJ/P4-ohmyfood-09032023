@@ -1,0 +1,289 @@
+@import"./utils/variables";
+@import"./utils/mixinTitleH1";
+/* -----GENERAL----- */
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  border: 1px red solid;
+  width: 375px;
+}
+#page{
+  width: 100%;
+}
+/* -----HEADER----- */
+header{
+  display: flex;
+  flex-direction: column;
+}
+/*logo*/
+#logoTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+h1{
+  width: 43.21%;
+  height: 30px;
+  margin: 14px 0 5px 0;
+  padding: 7px 0;
+  @include h1;
+}
+/*form*/
+#research{
+  background: #EAEAEA;
+  display: flex;
+}
+#form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+label{
+  width: 12px;
+  height: 16px;
+  margin: 16px 17px 18px 0;
+}
+.fa-location-dot{
+  color: #000;
+}
+#town{
+  width: 109px;
+  background: #EAEAEA;
+  border: none;
+}
+/*navigation*/
+nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $greyMid-color;
+}
+#navTitle{
+  width: 73.34%;
+  margin-top: 39px;
+  padding-bottom: 14px;
+  
+  text-align: center;
+}
+.title{
+  font-family: 'Roboto', sans-serif;
+  font-size: $fs24;
+  font-weight: $fw7;
+  line-height: 28px;
+}
+#explain{
+  width: 84%;
+  color: #353535;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: $fw3;
+  font-size: $fs18;
+  line-height: 21px;
+  text-align: center;
+}
+#btnExplain{
+  width: 58.99%;
+  margin: 27px 0 57px 0;
+  background: linear-gradient(360deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 25px;
+  padding: 13px 5%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: $fw5;
+  font-size: $fs16;
+  line-height: 19px;
+  color: $white-color;
+  &#btnExplain:hover{
+    opacity: 0.7;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.644);
+  }
+}
+/*functionaly*/
+#functionaly{
+  display: flex;
+  flex-direction: column;
+}
+#functionTitle{
+  margin: 48px 0 26px 20px;
+}
+.fBlock{
+  display: flex;
+  align-items: center;
+  height: 72.38px;
+  margin-bottom: 24.92px;
+}
+.fNombre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+  background: $primary-color;
+  border-radius: 12px;
+  color: $white-color;
+  z-index: 1;
+}
+.fBlockText{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $black-color;
+  width: 86.37%;
+  height: 100%;
+  margin-left: -12px;
+  background: #F7F7F7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+.fIcon{
+  color: #7E7E7E;
+}
+.fBlockText:hover{
+  background: #F5EDFF;
+}
+.fBlockText:hover .fIcon{
+  color: $primary-color;
+}
+.fIcon{
+  margin-left: 33.98px;
+}
+.fa-mobile-screen-button{
+  width: 13.02px;
+  height: 20px;
+}
+.fa-list{
+  width: 16px;
+  height: 16px;
+}
+.fa-store{
+  width: 18px;
+  height: 18px;
+}
+.fText{
+  margin-left: 27px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px
+}
+/* restaurant */
+#restaurant{
+  background: $greyMid-color;
+  padding-bottom: 48px;
+}
+#restaurantTitle{
+  margin: 44px 0 0 20px;
+  padding: 54px 0 26px 0;
+}
+  /* display restaurants */
+#display{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+  width: 100%;
+  position: relative;
+}
+.blockDisplay{
+  width: 89.34%;
+  height: 251px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.pictureDisplay{
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 174px;
+  object-fit: cover;
+}
+.new{
+  position: absolute;
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 1px 5px;
+  border-radius: 5px;
+  top: 5px;
+  right: 10px;
+}
+.textDisplay{
+  display: flex;
+  width: 100%;
+  height: 77px;
+}
+.linkText{
+  width: 100%;
+  padding: 16px 0 0 12.81px;
+  text-decoration: none;
+  color: $black-color;
+}
+.location{
+  width: 88%;
+}
+.titleLocation{
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: $fs18;
+  font-weight: $fw7;
+}
+.locationText{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+}
+.like{
+  width: 7.26%;
+  height: 21px;
+  position: relative;
+  top: 23px;
+  right: 24.63px;
+}
+.fa-heart{
+  width: 100%;
+  height: 100%;
+  font-weight: 100;
+  font-size: 21px;
+}
+/*footer*/
+footer{
+  background: $greyDark-color;
+  display: flex;
+  justify-content: center;
+}
+#footPage{
+  width: 86.67%;
+  margin: 22px 0 33px 0;
+}
+#footTitle{
+  margin-bottom: 16px;
+  font-family: 'Shrikhand';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: $white-color;
+}
+#footList{
+  list-style: none;
+}
+.fa-utensils, .fa-handshake-angle{
+  width: 13px;
+  height: 11px;
+  margin-right: 16px;
+}
+#l1, #l2, #l3{
+  margin-bottom: 7px;
+}
+.footLink{
+  text-decoration: none;
+  font-size: $fs16;
+  color: $white-color;
+}
