@@ -5,12 +5,10 @@
   margin: 0;
   padding: 0;
 }
-body{
-  border: 1px red solid;
-  width: 375px;
-}
 #page{
+  margin: 0 auto;
   width: 100%;
+  // width: 100%;
 }
 /* -----HEADER----- */
 header{
@@ -26,6 +24,8 @@ header{
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 h1{
+  display: flex;
+  justify-content: center;
   width: 43.21%;
   height: 30px;
   margin: 14px 0 5px 0;
@@ -71,7 +71,7 @@ nav{
   text-align: center;
 }
 .title{
-  font-family: 'Roboto', sans-serif;
+  font-family: $ffr;
   font-size: $fs24;
   font-weight: $fw7;
   line-height: 28px;
@@ -79,7 +79,7 @@ nav{
 #explain{
   width: 84%;
   color: #353535;
-  font-family: 'Roboto', sans-serif;
+  font-family: $ffr;
   font-style: normal;
   font-weight: $fw3;
   font-size: $fs18;
@@ -94,7 +94,7 @@ nav{
   border: none;
   border-radius: 25px;
   padding: 13px 5%;
-  font-family: 'Roboto', sans-serif;
+  font-family: $ffr;
   font-weight: $fw5;
   font-size: $fs16;
   line-height: 19px;
@@ -171,7 +171,7 @@ nav{
 }
 .fText{
   margin-left: 27px;
-  font-family: 'Roboto';
+  font-family: $ffr;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -233,7 +233,7 @@ nav{
 }
 .titleLocation{
   margin-bottom: 5px;
-  font-family: 'Roboto', sans-serif;
+  font-family: $ffr;
   font-size: $fs18;
   font-weight: $fw7;
 }
@@ -256,14 +256,12 @@ nav{
 {
   font-weight: 100;
 }
-.fa-regular .fa-heart
+.far, .fa-heart
 {
-  /* font-size: 42px; */
   color: black;
-  
   font-weight: 100;
 }
-.ft
+.fas, .ft
 {
   font-weight: 100;
   background: #000;
@@ -287,12 +285,10 @@ nav{
 {
   0%
   {
-    /* transform: scale(0); */
     background-size: 0% 0%;
   }
   100%
   {
-    /* transform: scale(1); */
     background-size: 100% 100%;
   }
 }
@@ -300,26 +296,13 @@ nav{
 {
   0%
   {
-    /* transform: scale(0); */
     background-size: 0% 0%;
   }
   100%
   {
-    /* transform: scale(1); */
     background-size: 100% 100%;
   }
 }
-// .fa-2x{
-//   font-weight: 100;
-// }
-// .fa-heart{
-//   width: 100%;
-//   height: 100%;
-//   font-weight: 100;
-//   font-size: 21px;
-//   line-height:21px;
-//   color: #000; 
-// }
 /*footer*/
 footer{
   background: $greyDark-color;
@@ -354,4 +337,79 @@ footer{
   text-decoration: none;
   font-size: $fs16;
   color: $white-color;
+}
+@media screen and (min-width: 768px){
+  /*navigation*/
+  #btnExplain{
+    width: auto;
+  }
+  /*functionaly*/
+  #fContainer{
+    display: flex;
+  }
+  .fBlock{
+    flex: 0 32%;
+  }
+  /*restaurant*/
+  #restaurantDisplay{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #display{
+    width: 50%;
+  }
+  /*footer*/
+  #footList{
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1024px){
+  /*functionaly*/
+  #functionaly{
+    flex-direction: column;
+    align-items: center;
+  }
+  #blockFunctionaly{
+    display: flex;
+    flex-direction: column;
+    width: 73.5%;
+  }
+  /*restaurant*/
+  #restaurant{
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  #blockRestaurant{
+    display: flex;
+    flex-direction: column;
+  }
+  #restaurantTitle{
+    margin: 44px 0 0 218px;
+  }
+  #display {
+    width: 100%;
+    margin: 0 25px;
+  }
+  #restaurantDisplay{
+    width: 113%;
+    margin-left: 193px;
+    flex-wrap: nowrap;
+  }
+  .blockDisplay{
+    width: 104.24%;
+  }
+  /*footer*/
+  #footPage{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  #footList{
+    width: 64%;
+    justify-content: space-around;
+  }
 }

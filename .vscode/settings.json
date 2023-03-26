@@ -1,0 +1,15 @@
+{
+  "git.enabled": false,
+  "git.confirmSync": false,
+  "git.confirmNoVerifyCommit": false,
+  "git.confirmForcePush": false,
+  "git.confirmEmptyCommits": false,
+  "git.autorefresh": false,
+  "git.decorations.enabled": false,
+  "git.enableStatusBarSync": false,
+  "github.gitAuthentication": false,
+  "debug.javascript.defaultRuntimeExecutable": {
+
+    "pwa-node": "node"
+  }
+}
