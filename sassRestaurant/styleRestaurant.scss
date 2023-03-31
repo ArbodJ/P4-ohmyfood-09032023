@@ -40,7 +40,7 @@ main{
   position: relative;
   background: #f6f6f6;
   margin-top: -46px;
-  border-radius: 25px;
+  border-radius: 25px 25px 0 0;
 }
 #name{
   display: flex;
@@ -300,4 +300,74 @@ footer{
   text-decoration: none;
   font-size: $fs16;
   color: $white-color;
+}
+/*responsive*/
+@media screen and (min-width: 768px) {
+  #linkReturn{
+    display: flex;
+    justify-content: flex-end;
+    width: 5%;
+    margin: 26px 0 21px 0px;
+    text-decoration: none;
+    color: $black-color;
+  }
+  h1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 14px 0 5px 0;
+  }
+  #btnOrder{
+    width: 186px;
+    padding: 13px 16px;
+  }
+  /*footer*/
+  #footList{
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #pictureRestaurant{
+    height: 383px;
+  }
+  #picture{
+    height: 383px;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 69.23%;
+    position: relative;
+    top: -46px;
+  }
+  #name{
+    justify-content: center;
+  }
+  #nameRestaurant{
+    margin-right: 24px;
+  }
+  #menu{
+    width: 60.1%;
+  }
+  #btnOrder{
+    width: 186px;
+    padding: 13px 16px;
+  }
+  /*footer*/
+  footer{
+    margin-top: -46px;
+  }
+  #footPage{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin: 22px 0 33px 0;
+  }
+  #footList{
+    width: 64%;
+    justify-content: space-around;
+  }
 }
