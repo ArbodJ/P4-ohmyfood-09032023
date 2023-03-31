@@ -188,16 +188,19 @@ nav {
 .fa-mobile-screen-button {
   width: 13.02px;
   height: 20px;
+  font-weight: 700;
 }
 
 .fa-list {
   width: 16px;
   height: 16px;
+  font-weight: 700;
 }
 
 .fa-store {
   width: 18px;
   height: 18px;
+  font-weight: 700;
 }
 
 .fText {
@@ -211,6 +214,7 @@ nav {
 
 /* restaurant */
 #restaurant {
+  position: relative;
   background: #F7F7F7;
   padding-bottom: 48px;
 }
@@ -249,7 +253,7 @@ nav {
 .new {
   position: absolute;
   background-color: #99e2d0;
-  color: #1b6150;
+  color: #008766;
   padding: 1px 5px;
   border-radius: 5px;
   top: 5px;
@@ -301,13 +305,11 @@ nav {
   font-weight: 100;
 }
 
-.far, .fa-heart {
+.fa-heart {
   color: black;
-  font-weight: 100;
 }
 
 .fas, .ft {
-  font-weight: 100;
   background: #000;
   -webkit-background-clip: text;
   background-clip: text;
@@ -316,7 +318,7 @@ nav {
 }
 
 .ft:hover {
-  background: radial-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
   font-weight: 900;
@@ -413,30 +415,30 @@ footer {
     flex-direction: column;
     width: 73.5%;
   }
+  .fBlock {
+    margin-bottom: 80.62px;
+  }
   /*restaurant*/
   #restaurant {
     display: flex;
     justify-content: flex-start;
-    overflow: hidden;
   }
   #blockRestaurant {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   #restaurantTitle {
-    margin: 44px 0 0 218px;
+    margin: 0 0 0 10px;
   }
   #display {
     width: 100%;
-    margin: 0 25px;
   }
   #restaurantDisplay {
-    width: 113%;
-    margin-left: 193px;
     flex-wrap: nowrap;
   }
   .blockDisplay {
-    width: 104.24%;
+    width: 95%;
   }
   /*footer*/
   #footPage {
