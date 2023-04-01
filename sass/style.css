@@ -225,7 +225,7 @@ nav {
 }
 
 /* display restaurants */
-#display {
+.display {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -400,7 +400,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
-  #display {
+  .display {
     width: 50%;
   }
   /*footer*/
@@ -440,7 +440,7 @@ footer {
   #restaurantTitle {
     margin: 0 0 0 10px;
   }
-  #display {
+  .display {
     flex: 0 45.8%;
     width: 100%;
   }
