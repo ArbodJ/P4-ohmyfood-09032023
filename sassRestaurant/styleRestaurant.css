@@ -93,10 +93,6 @@ main {
   margin: 0 auto;
 }
 
-#starter {
-  height: 269.64px;
-}
-
 .animMeal {
   transition: 0.3s;
   position: relative;
@@ -254,6 +250,10 @@ main {
 
 #starter .animMenu3:nth-child(4) {
   animation: fade 0.5s ease-out 0.9s 1 both;
+}
+
+#starter .animMenu3a:nth-child(5) {
+  animation: fade 0.5s ease-out 1.05s 1 both;
 }
 
 #dish .animMenu4:nth-child(2) {
