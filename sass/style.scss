@@ -76,7 +76,7 @@
   position: absolute;
   border-radius: 50%;
   border-style: solid;
-  animation: animate 3s linear infinite;
+  animation: animate 1.5s linear infinite;
 }
 .loader .face:nth-child(1) {
   width: 100%;
@@ -506,7 +506,7 @@ footer{
   #blockFunctionaly{
     display: flex;
     flex-direction: column;
-    width: 73.5%;
+    width: 72.5%;
   }
   .fBlock{
     flex: 0 33%;
@@ -558,5 +558,14 @@ footer{
   }
   #l1, #l2, #l3{
     margin-right: 7px;
+  }
+}
+@media screen and (min-width: 1180px){
+  /*functionaly*/
+  .fIcon{
+    margin-left: 10%;
+  }
+  .fText{
+    margin-left: 5%;
   }
 }
