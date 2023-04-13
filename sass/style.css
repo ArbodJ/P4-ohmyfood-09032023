@@ -288,10 +288,6 @@ nav #btnExplain#btnExplain:hover {
   color: #7E7E7E;
 }
 
-.fBlockText:hover {
-  background: #F5EDFF;
-}
-
 .fBlockText:hover .fIcon {
   color: #9356DC;
 }
